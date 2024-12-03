@@ -1,19 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import './navbar.css';
 
-const Navbar = () => {
+function Navbar({ setCurrentPage }) {
     return (
         <nav className="navbar">
             <ul className="navbar-list">
-                <li className="navbar-item">
-                    <Link to="/">Home</Link>
+                <li className="navbar-item" onClick={() => setCurrentPage('home')}>
+                    <a href="#">Home</a>
                 </li>
-                <li className="navbar-item">
-                    <Link to="/contact">Contact</Link>
+                <li className="navbar-item" onClick={() => setCurrentPage('contact')}>
+                    <a href="#">Contact</a>
                 </li>
             </ul>
         </nav>
     );
-};
+}
 
 export default Navbar;

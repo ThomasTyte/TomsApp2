@@ -1,20 +1,28 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useState } from 'react';
+import './index.css'; 
 import Navbar from './component/navbar/Navbar';
-import Contact from './pages/contactpage/Contact';
-import Home from './pages/Homepage/Home';
+import Contact from './component/contactpage/Contact';
+import Home from './component/Homepage/Home';
 
 function App() {
+    const [currentPage, setCurrentPage] = useState('home');
+
+    const renderPage = () => {
+        switch (currentPage) {
+            case 'home':
+                return <Home />;
+            case 'contact':
+                return <Contact />;
+            default:
+                return <Home />;
+        }
+    };
+
     return (
-        <Router>
-            <div>
-                <Navbar />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/contact" element={<Contact />} />
-                </Routes>
-            </div>
-        </Router>
+        <div>
+            <Navbar setCurrentPage={setCurrentPage} />
+            {renderPage()}
+        </div>
     );
 }
 
