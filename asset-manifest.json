@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TomsApp2/static/css/main.4f0215f0.css",
+    "main.js": "/TomsApp2/static/js/main.8a387e0f.js",
+    "static/js/453.ed3810f9.chunk.js": "/TomsApp2/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/TomsApp2/index.html",
+    "main.4f0215f0.css.map": "/TomsApp2/static/css/main.4f0215f0.css.map",
+    "main.8a387e0f.js.map": "/TomsApp2/static/js/main.8a387e0f.js.map",
+    "453.ed3810f9.chunk.js.map": "/TomsApp2/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f0215f0.css",
+    "static/js/main.8a387e0f.js"
+  ]
+}
